@@ -1,0 +1,19 @@
+:root {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: $main-font;
+  color: $main-color;
+  font-size: 18px;
+  line-height: 140%;
+  min-width: 320px;
+}
+
+.section {
+  position: relative;
+  min-height: 100vh;
+  max-width: 100%;
+  transition: opacity 0.5s ease-out;
+  background-color: $color-black-space;
+}

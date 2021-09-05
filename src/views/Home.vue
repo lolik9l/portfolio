@@ -1,18 +1,31 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <section class="section">
+    <HomeIllustration />
+    <Menu />
+    <div class="home">
+      <h3 class="home__sub_headline">Christopher Lis</h3>
+      <h1 class="home__headline">
+        ONE WITH AN EVERLASTING DESIRE
+        <br>
+        FOR THE UNKNOWN & UNTOLD
+      </h1>
+      <div class="home__button">
+        <router-link class="button button_default" to="/featured-projects">
+          VIEW Projects
+        </router-link>
+      </div>     
+    </div>
+  </section>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+<script>
+import HomeIllustration from '@/components/HomeIllustration'
+import Menu from '@/components/Menu'
 
-@Options({
+export default {
+  name: 'HomeView',
   components: {
-    HelloWorld,
+    Menu,
   },
-})
-export default class Home extends Vue {}
+}
 </script>
